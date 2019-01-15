@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My TrainTimes</title>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <!-- link boot trap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+     <!-- link firebase -->
+     <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+
+    <!-- Moment.js Reference -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    <!-- <script src="Train.js"></script> -->
+</head>
+
+
+<body>
+
+        <!-- create Div for headeing -->
+    <div class="container">
+            <div class="card card-default">
+
+                    <div class="text-center card-header">
+                           <h2> Love Music ?? 
+                            Then CLick A Button to Listen !!</h2>
+                    </div>
+                    
+        <!-- input music  -->
+        <audio id="musics" src="./assets/audio/IT.mp3">
+
+        <!-- click button -->
+        </audio>
+        <button id="playBtn"><h6>Play</h6></button>
+        <button id="pauseBtn"><h6>Pause</h6></button>
+        <button id="ppBtn"><h6>Play And Pause</h6></button>
+
+        </div>
+
+        <!-- ------------------------------------------------------->
+        <!-- Start Assigment for HomeWork from here -->
+
+
+        <br>
+         <!-- Jumbotron -->
+        <div class="jumbotron">
+            <h1 class="text-center">Schedules TrainTimes board!</h1>
+        </div>
+
+
+    <div class="row">
+
+        <!-- Train - Card-->
+        <div class="col-lg-3">
+            <div class="card card-default">
+                <div class="card-header">
+                    <h4>Add Train Name</h4>
+                </div>
+                <div class="card-body">
+                    <!-- Sign-up Form (Info various input "types")-->
+                    <form>
+                        <!-- form for Train Name -->
+                      <div class="form-group">
+                        <label for="train-name-input"><h5>Train Name</h5></label>
+                        <input type="text" class="form-control" id="train-name-input">
+                      </div>
+                        <!--  form for Destination -->
+                      <div class="form-group">
+                        <label for="destination-input"><h5>Destination</h5></label>
+                        <input type="text" class="form-control" id="destination-input">
+                      </div>
+                        <!--  form for First Train input time -->
+                      <div class="form-group">
+                        <label for="first-train-input"><h5>First Train Time (HH:MM)</h5></label>
+                        <input type="text" class="form-control" id="first-train-input">
+                      </div>
+                      <!-- form for Frequency Train -->
+                      <div class="form-group">
+                        <label for="frequency-input"><h5>Frequency (mins)</h5></label>
+                        <input type="text" class="form-control" id="frequency-input">
+                      </div>
+                      <!-- Submit Output button  -->
+                      <button type="submit" class="btn btn-primary" id="add-train-btn">Submit</button> 
+                      
+         </form>          
+                </div>
+            </div>
+        </div>
+  
+  
+  
+  <!-- create New Row Output from JS file -->
+  <div class="col-lg-9">
+    <div class="card card-default">
+        <div class="card-header">
+            <h4>Schedules TrainTimes</h4>
+        </div>
+        <!-- Card for Train Table Ouput -->
+        <div class="card-body" id="recent-member">
+            <table class="table table-hover" id='train-table'>
+                <thead>
+                    <tr>
+                        <!-- Train Name -->
+                        <th><h5>Train Name</h5></th>
+                        <!-- Destination -->
+                        <th><h5>Destination</h5></th>
+                        <!-- Frequency in minutes -->
+                        <th><h5>Frequency <br>(mins)</h5</th>
+                        <!-- Time to Next Train Arrive -->
+                        <th><h5>Next Arrival</h5</th>
+                        <!-- Time about minutes away -->
+                        <th><h5>Minutes Away</h5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </div>
+  
+  
+    <!-- Link to JS File -->
+    <script src="./assets/javascript/Train.js"></script>
+
+
+</body>
+
+</html>

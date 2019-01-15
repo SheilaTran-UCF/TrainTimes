@@ -1,0 +1,41 @@
+/* background body */
+body { 
+    background-image: url(../images/train1.jpg);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+     background-color: rgb(245, 221, 87); 
+    height: auto;
+}
+
+/* audio */
+#audioControl {
+    text-align: center;
+}
+/* h2,h6 */
+h2, h6{
+    color: blue;
+
+}
+/*  button */
+#ppBtn{
+    color: blue;
+}
+/* th color */
+th {
+   /* text-align:  center ; */
+   color: blue;
+}
+/*  clor for box */
+label{
+    color: blue;
+}
+/* h4 */
+h4{
+    color: green; 
+}
+/* h1 */
+h1{
+    color: gold;
+}
