@@ -105,10 +105,10 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
     var differenceTimes = moment().diff(trainTime, "minutes");
 
     // Math for  modulus between the differenceTimes and the frequency.
-    var tRemainder = differenceTimes % timeFrequency;
+    var timeRemainder = differenceTimes % timeFrequency;
      
      // To calculate the minutes till arrival,
-    timeMinutes = timeFrequency - tRemainder;
+    timeMinutes = timeFrequency - timeRemainder;
 
     // To calculate the arrival time, add the timeMinutes to the current timewith add & format
     timeTrainArrival = moment()
